@@ -234,11 +234,11 @@
   /* ── ACTIVE NAV STATE ───────────────────────────────── */
   const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
   if (navAnchors.length && 'IntersectionObserver' in window) {
-    const sectionLinkMap = new Map();
+    const sectionLinkPairs = [];
     navAnchors.forEach((link) => {
       const id = link.getAttribute('href').slice(1);
       const section = document.getElementById(id);
-      if (section) sectionLinkMap.set(section, link);
+      if (section) sectionLinkPairs.push({ section, link });
     });
 
     const setActiveLink = (activeLink) => {
@@ -259,11 +259,12 @@
         .filter((entry) => entry.isIntersecting)
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
       if (visible[0]) {
-        setActiveLink(sectionLinkMap.get(visible[0].target));
+        const activePair = sectionLinkPairs.find(({ section }) => section === visible[0].target);
+        setActiveLink(activePair && activePair.link);
       }
-    }, { threshold: [0.3, 0.6], rootMargin: '-25% 0px -55% 0px' });
+    }, { threshold: [0.3, 0.6], rootMargin: '-25% 0px -55% 0px' }); // Center-band viewport weighting.
 
-    sectionLinkMap.forEach((_, section) => sectionObserver.observe(section));
+    sectionLinkPairs.forEach(({ section }) => sectionObserver.observe(section));
   }
 
   /* ── BACK TO TOP ────────────────────────────────────── */
