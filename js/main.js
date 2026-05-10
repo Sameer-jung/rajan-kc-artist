@@ -260,7 +260,9 @@
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
       if (visible[0]) {
         const activePair = sectionLinkPairs.find(({ section }) => section === visible[0].target);
-        setActiveLink(activePair && activePair.link);
+        if (activePair) {
+          setActiveLink(activePair.link);
+        }
       }
     }, { threshold: [0.3, 0.6], rootMargin: '-25% 0px -55% 0px' }); // Center-band viewport weighting.
 
