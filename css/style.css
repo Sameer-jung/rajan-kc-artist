@@ -1149,16 +1149,33 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0s !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0s !important;
-    scroll-behavior: auto !important;
-  }
+  html { scroll-behavior: auto; }
 
   .grain {
     animation: none;
+  }
+
+  .marquee-track,
+  .scroll-arrow-line,
+  .hero-name,
+  .hero-tagline,
+  .hero-meta-row,
+  .hero-cta,
+  .reveal {
+    animation: none;
+    transition: none;
+  }
+
+  .track-img,
+  .latest-img-wrap img,
+  .platform-item,
+  .track-card,
+  .hero-portrait-img,
+  #cursor-outer,
+  #cursor-inner,
+  .nav-links a::after,
+  .footer-link::before,
+  .back-to-top {
+    transition: none;
   }
 }

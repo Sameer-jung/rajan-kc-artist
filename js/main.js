@@ -253,6 +253,7 @@
       });
     };
 
+    // Bias active link updates toward sections occupying the center viewport band.
     const sectionObserver = new IntersectionObserver((entries) => {
       const visible = entries
         .filter((entry) => entry.isIntersecting)
