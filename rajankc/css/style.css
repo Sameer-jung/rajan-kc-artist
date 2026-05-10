@@ -54,6 +54,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.no-custom-cursor {
+  cursor: auto;
+}
+
+body.no-custom-cursor a,
+body.no-custom-cursor button {
+  cursor: pointer;
+}
+
+body.no-custom-cursor #cursor-outer,
+body.no-custom-cursor #cursor-inner {
+  display: none;
+}
+
 ::selection {
   background: rgba(200, 164, 90, 0.2);
   color: var(--gold-lt);
@@ -197,6 +211,8 @@ nav::after {
 
 .nav-links a:hover { color: var(--ivory); }
 .nav-links a:hover::after { width: 100%; }
+.nav-links a.is-active { color: var(--ivory); }
+.nav-links a.is-active::after { width: 100%; }
 
 /* ── HERO ───────────────────────────────────────────── */
 #hero {
@@ -922,6 +938,45 @@ nav::after {
   transform: translateX(0);
 }
 
+/* ── BACK TO TOP ─────────────────────────────────────── */
+.back-to-top {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(200,164,90,0.45);
+  background: rgba(4,4,10,0.85);
+  color: var(--gold-lt);
+  font-size: 18px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 700;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background: rgba(200,164,90,0.16);
+}
+
+/* ── FOCUS STATES ────────────────────────────────────── */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--gold-lt);
+  outline-offset: 3px;
+}
+
 /* ── FOOTER ─────────────────────────────────────────── */
 footer {
   padding: 60px 80px;
@@ -1083,4 +1138,44 @@ footer {
   .platform-type, .platform-arrow { display: none; }
   footer { grid-template-columns: 1fr; padding: 48px 32px; }
   .footer-right { text-align: left; }
+  .back-to-top { right: 18px; bottom: 18px; }
+}
+
+@media (hover: none) {
+  .track-play {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .grain {
+    animation: none;
+  }
+
+  .marquee-track,
+  .scroll-arrow-line,
+  .hero-name,
+  .hero-tagline,
+  .hero-meta-row,
+  .hero-cta,
+  .reveal {
+    animation: none;
+    transition: none;
+  }
+
+  .track-img,
+  .latest-img-wrap img,
+  .platform-item,
+  .track-card,
+  .hero-portrait-img,
+  #cursor-outer,
+  #cursor-inner,
+  .nav-links a::after,
+  .footer-link::before,
+  .back-to-top {
+    transition: none;
+  }
 }
