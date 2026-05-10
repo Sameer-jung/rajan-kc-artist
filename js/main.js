@@ -264,7 +264,7 @@
           setActiveLink(activePair.link);
         }
       }
-    }, { threshold: [0.3, 0.6], rootMargin: '-25% 0px -55% 0px' }); // Center-band viewport weighting.
+    }, { threshold: [0.3, 0.6], rootMargin: '-140px 0px -280px 0px' }); // Center-band viewport weighting.
 
     sectionLinkPairs.forEach(({ section }) => sectionObserver.observe(section));
   }
