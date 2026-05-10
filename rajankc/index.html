@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rajan KC — Rapper, Poet, Songwriter from Kathmandu, Nepal." />
+  <title>RAJAN KC — Rapper · Poet · Songwriter</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Unbounded:wght@200;400;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── ATMOSPHERE ──────────────────────────────────── -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ── CUSTOM CURSOR ───────────────────────────────── -->
+  <div id="cursor-outer" aria-hidden="true">
+    <span id="cursor-label"></span>
+  </div>
+  <div id="cursor-inner" aria-hidden="true"></div>
+
+  <!-- ── NAV ─────────────────────────────────────────── -->
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nav-logo">RAJAN KC</div>
+    <ul class="nav-links">
+      <li><a href="#about"       data-cursor="ABOUT">About</a></li>
+      <li><a href="#discography" data-cursor="MUSIC">Music</a></li>
+      <li><a href="#latest"      data-cursor="NEW">Latest</a></li>
+      <li><a href="#connect"     data-cursor="STREAM">Stream</a></li>
+    </ul>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════
+       § 01  HERO
+  ════════════════════════════════════════════════════ -->
+  <section id="hero" aria-label="Hero">
+
+    <!-- Portrait Panel -->
+    <div class="hero-portrait-wrap">
+      <img
+        class="hero-portrait-img"
+        src="https://i.scdn.co/image/ab6761610000e5ebfdd874cbf4d34472c037f964"
+        alt="Rajan KC — portrait"
+        loading="eager"
+      />
+      <span class="hero-v-text" aria-hidden="true">KATHMANDU · NEPAL · NEPHOP</span>
+    </div>
+
+    <!-- Text Panel -->
+    <div class="hero-text-panel">
+      <p class="hero-eyebrow" aria-label="Artist role">Rapper · Poet · Songwriter</p>
+
+      <div class="hero-name-block" aria-hidden="true">
+        <span
+          class="hero-name glitch"
+          data-text="RAJAN"
+        >RAJAN</span>
+      </div>
+      <div class="hero-name-block">
+        <span class="hero-name">
+          <span class="hero-name-kc">KC</span>
+        </span>
+      </div>
+
+      <p class="hero-tagline">
+        Where truth becomes rhythm —<br />
+        uncompromising verse from the streets of Kathmandu.
+      </p>
+
+      <div class="hero-meta-row" role="list" aria-label="Key facts">
+        <div class="hero-stat" role="listitem">
+          <span class="hero-stat-num">2022</span>
+          <span class="hero-stat-label">Debut Album</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat" role="listitem">
+          <span class="hero-stat-num">10+</span>
+          <span class="hero-stat-label">Releases</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat" role="listitem">
+          <span class="hero-stat-num">NP</span>
+          <span class="hero-stat-label">Origin</span>
+        </div>
+      </div>
+
+      <a
+        class="hero-cta"
+        href="https://open.spotify.com/artist/4b8maGuGM00EcZZjs02eJm"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-cursor="SPOTIFY"
+        aria-label="Listen on Spotify"
+      >
+        Listen Now
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Cinematic corner frames -->
+    <div class="corner-frame tl" aria-hidden="true"></div>
+    <div class="corner-frame br" aria-hidden="true"></div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-arrow" aria-hidden="true">
+      <div class="scroll-arrow-line"></div>
+    </div>
+  </section>
+
+  <!-- ── MARQUEE ──────────────────────────────────────── -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <!-- duplicated for seamless loop -->
+      <div class="marquee-item"><span>Rapper</span><span class="marquee-dot"></span><span>Poet</span><span class="marquee-dot"></span><span>Songwriter</span><span class="marquee-dot"></span><span>Kathmandu</span><span class="marquee-dot"></span><span>NepHop</span><span class="marquee-dot"></span><span>MA Album</span><span class="marquee-dot"></span><span>2025</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Rapper</span><span class="marquee-dot"></span><span>Poet</span><span class="marquee-dot"></span><span>Songwriter</span><span class="marquee-dot"></span><span>Kathmandu</span><span class="marquee-dot"></span><span>NepHop</span><span class="marquee-dot"></span><span>MA Album</span><span class="marquee-dot"></span><span>2025</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Rapper</span><span class="marquee-dot"></span><span>Poet</span><span class="marquee-dot"></span><span>Songwriter</span><span class="marquee-dot"></span><span>Kathmandu</span><span class="marquee-dot"></span><span>NepHop</span><span class="marquee-dot"></span><span>MA Album</span><span class="marquee-dot"></span><span>2025</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Rapper</span><span class="marquee-dot"></span><span>Poet</span><span class="marquee-dot"></span><span>Songwriter</span><span class="marquee-dot"></span><span>Kathmandu</span><span class="marquee-dot"></span><span>NepHop</span><span class="marquee-dot"></span><span>MA Album</span><span class="marquee-dot"></span><span>2025</span><span class="marquee-dot"></span></div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════
+       § 02  ABOUT
+  ════════════════════════════════════════════════════ -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="about-num" aria-hidden="true">01</div>
+
+    <div>
+      <p class="about-label">Identity</p>
+      <h2 id="about-heading" class="about-headline reveal">
+        Verse as<br />
+        <em>resistance.</em><br />
+        Word as weapon.
+      </h2>
+      <p class="about-body reveal reveal-delay-1">
+        Rajan KC is a Kathmandu-based rapper, poet, and songwriter whose music refuses
+        comfort. Rooted in Nepali soil and shaped by lived contradiction, his verses
+        reject spectacle — choosing instead the raw architecture of honesty.
+      </p>
+      <p class="about-body reveal reveal-delay-2">
+        From the debut album <em>MA</em> (2022) through a series of incendiary 2025
+        singles, his catalog maps the interior of a generation confronting identity,
+        injustice, and the bittersweet weight of home. NepHop's uncompromising voice.
+      </p>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       § 03  DISCOGRAPHY
+  ════════════════════════════════════════════════════ -->
+  <section id="discography" aria-labelledby="disco-heading">
+
+    <div class="disco-header">
+      <h2 id="disco-heading" class="disco-title">
+        DISCO<span>GRAPHY</span>
+      </h2>
+      <div class="disco-line" aria-hidden="true"></div>
+      <p class="disco-count" aria-label="7 selected works">07 works</p>
+    </div>
+
+    <div class="track-grid" role="list" aria-label="Selected discography">
+
+      <!-- T1 — large hero track -->
+      <article class="track-card t1" role="listitem" data-cursor="PLAY">
+        <img class="track-img"
+          src="https://i.scdn.co/image/ab67616d000048516d9f7dd64eed9eb701577528"
+          alt="Kathai Mero Desh cover" loading="lazy" />
+        <div class="track-gradient" aria-hidden="true"></div>
+        <div class="track-content">
+          <p class="track-tag">Anthem</p>
+          <h3 class="track-name">Kathai Mero Desh</h3>
+          <p class="track-year">2022</p>
+        </div>
+        <a class="track-play"
+          href="https://open.spotify.com/artist/4b8maGuGM00EcZZjs02eJm"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Play Kathai Mero Desh on Spotify">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </article>
+
+      <!-- T2 -->
+      <article class="track-card t2" role="listitem" data-cursor="PLAY">
+        <img class="track-img"
+          src="https://i.scdn.co/image/ab67616d000048510daf76f5c6b3ea1d9895bcd2"
+          alt="Gardai Chhu Kosis cover" loading="lazy" />
+        <div class="track-gradient" aria-hidden="true"></div>
+        <div class="track-content">
+          <p class="track-tag">Persist</p>
+          <h3 class="track-name">Gardai Chhu Kosis</h3>
+          <p class="track-year">2022</p>
+        </div>
+        <a class="track-play"
+          href="https://open.spotify.com/artist/4b8maGuGM00EcZZjs02eJm"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Play Gardai Chhu Kosis on Spotify">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </article>
+
+      <!-- T3 -->
+      <article class="track-card t3" role="listitem" data-cursor="PLAY">
+        <img class="track-img"
+          src="https://i.scdn.co/image/ab67616d00004851c020bf97e58a8162784f6ab8"
+          alt="Tito Satya cover" loading="lazy" />
+        <div class="track-gradient" aria-hidden="true"></div>
+        <div class="track-content">
+          <p class="track-tag">Truth</p>
+          <h3 class="track-name">Tito Satya</h3>
+          <p class="track-year">2022</p>
+        </div>
+        <a class="track-play"
+          href="https://open.spotify.com/artist/4b8maGuGM00EcZZjs02eJm"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Play Tito Satya on Spotify">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </article>
+
+      <!-- T4 -->
+      <article class="track-card t4" role="listitem" data-cursor="PLAY">
+        <img class="track-img"
+          src="https://i.scdn.co/image/ab67616d00004851e25f0fae85a08ec952888a63"
+          alt="Badhai Chha Talai cover" loading="lazy" />
+        <div class="track-gradient" aria-hidden="true"></div>
+        <div class="track-content">
+          <p class="track-tag">2024</p>
+          <h3 class="track-name">Badhai Chha Talai</h3>
+          <p class="track-year">Single</p>
+        </div>
+        <a class="track-play"
+          href="https://open.spotify.com/album/17QQDIJisCs6owvtoIoC9a"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Play Badhai Chha Talai on Spotify">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </article>
+
+      <!-- T5 -->
+      <article class="track-card t5" role="listitem" data-cursor="PLAY">
+        <img class="track-img"
+          src="https://i.scdn.co/image/ab67616d00004851e74b45a62c6443dc9a38eecf"
+          alt="Janayudha Ko Shahid cover" loading="lazy" />
+        <div class="track-gradient" aria-hidden="true"></div>
+        <div class="track-content">
+          <p class="track-tag">Tribute</p>
+          <h3 class="track-name">Janayudha Ko Shahid</h3>
+          <p class="track-year">2022</p>
+        </div>
+        <a class="track-play"
+          href="https://open.spotify.com/artist/4b8maGuGM00EcZZjs02eJm"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Play Janayudha Ko Shahid on Spotify">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </article>
+
+      <!-- T6 -->
+      <article class="track-card t6" role="listitem" data-cursor="PLAY">
+        <img class="track-img"
+          src="https://i.scdn.co/image/ab67616d000048516d9f7dd64eed9eb701577528"
+          alt="MA Album cover" loading="lazy" />
+        <div class="track-gradient" aria-hidden="true"></div>
+        <div class="track-content">
+          <p class="track-tag">Album</p>
+          <h3 class="track-name">MA</h3>
+          <p class="track-year">2022 · 10 tracks</p>
+        </div>
+        <a class="track-play"
+          href="https://open.spotify.com/album/3QZpico4P4JC65GbbbiUm4"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Listen to MA album on Spotify">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </article>
+
+      <!-- T7 — 2025 new -->
+      <article class="track-card t7" role="listitem" data-cursor="PLAY">
+        <img class="track-img"
+          src="https://i.scdn.co/image/ab67616d000048510daf76f5c6b3ea1d9895bcd2"
+          alt="Kata Jadai Cha Rastra cover" loading="lazy" />
+        <div class="track-gradient" aria-hidden="true"></div>
+        <div class="track-content">
+          <p class="track-tag" style="color:#e2c07e;">New · 2025</p>
+          <h3 class="track-name">Kata Jadai Cha Rastra</h3>
+          <p class="track-year">Single</p>
+        </div>
+        <a class="track-play"
+          href="https://open.spotify.com/album/3WCDMtnle0TQeG9jEVpwUy"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Listen to Kata Jadai Cha Rastra on Spotify">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       § 04  LATEST RELEASE
+  ════════════════════════════════════════════════════ -->
+  <section id="latest" aria-labelledby="latest-heading">
+
+    <div class="reveal">
+      <p class="latest-label">Latest Release</p>
+      <div class="latest-year-badge">2025</div>
+      <h2 id="latest-heading" class="latest-title">
+        KATA JADAI<br />CHA RASTRA
+      </h2>
+      <p class="latest-sub">
+        Rajan KC's most recent single — a searing indictment wrapped in
+        quiet, devastating verse. Out now on all platforms.
+      </p>
+      <a
+        class="hero-cta"
+        href="https://open.spotify.com/album/3WCDMtnle0TQeG9jEVpwUy"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-cursor="STREAM"
+        aria-label="Listen to Kata Jadai Cha Rastra on Spotify"
+      >
+        Stream Now
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="latest-img-wrap reveal reveal-delay-2" data-cursor="VIEW">
+      <img
+        src="https://i.scdn.co/image/ab6761610000e5ebfdd874cbf4d34472c037f964"
+        alt="Rajan KC promotional photo"
+        loading="lazy"
+      />
+      <div class="latest-img-frame" aria-hidden="true">
+        <div class="latest-img-corner tl"></div>
+        <div class="latest-img-corner br"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       § 05  STREAM / CONNECT
+  ════════════════════════════════════════════════════ -->
+  <section id="connect" aria-labelledby="connect-heading">
+
+    <div class="connect-header reveal">
+      <h2 id="connect-heading" class="connect-title">
+        FIND<br />THE<br />MUSIC
+      </h2>
+      <p class="connect-sub">
+        Stream, follow, and connect across platforms
+      </p>
+    </div>
+
+    <nav class="platform-list" aria-label="Streaming platforms">
+
+      <a class="platform-item"
+        href="https://open.spotify.com/artist/4b8maGuGM00EcZZjs02eJm"
+        target="_blank" rel="noopener noreferrer"
+        data-cursor="STREAM"
+        aria-label="Listen on Spotify">
+        <span class="platform-num">01</span>
+        <span class="platform-name">Spotify</span>
+        <span class="platform-type">Stream</span>
+        <span class="platform-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="platform-item"
+        href="https://www.instagram.com/_rajankc/"
+        target="_blank" rel="noopener noreferrer"
+        data-cursor="FOLLOW"
+        aria-label="Follow on Instagram">
+        <span class="platform-num">02</span>
+        <span class="platform-name">Instagram</span>
+        <span class="platform-type">Follow</span>
+        <span class="platform-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="platform-item"
+        href="https://www.facebook.com/rajankcmusic"
+        target="_blank" rel="noopener noreferrer"
+        data-cursor="CONNECT"
+        aria-label="Connect on Facebook">
+        <span class="platform-num">03</span>
+        <span class="platform-name">Facebook</span>
+        <span class="platform-type">Connect</span>
+        <span class="platform-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="platform-item"
+        href="https://open.spotify.com/album/3QZpico4P4JC65GbbbiUm4"
+        target="_blank" rel="noopener noreferrer"
+        data-cursor="LISTEN"
+        aria-label="Listen to MA album">
+        <span class="platform-num">04</span>
+        <span class="platform-name">Album — MA</span>
+        <span class="platform-type">Full Album</span>
+        <span class="platform-arrow" aria-hidden="true">→</span>
+      </a>
+
+    </nav>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+
+    <div>
+      <p class="footer-brand">
+        RAJAN<br /><span class="footer-brand-gold">KC</span>
+      </p>
+      <p class="footer-tagline">
+        Rapper · Poet · Songwriter<br />
+        Kathmandu, Nepal
+      </p>
+    </div>
+
+    <nav class="footer-links-group" aria-label="Footer links">
+      <a class="footer-link"
+        href="https://open.spotify.com/artist/4b8maGuGM00EcZZjs02eJm"
+        target="_blank" rel="noopener noreferrer"
+        data-cursor="SPOTIFY">Spotify</a>
+      <a class="footer-link"
+        href="https://www.instagram.com/_rajankc/"
+        target="_blank" rel="noopener noreferrer"
+        data-cursor="INSTAGRAM">Instagram</a>
+      <a class="footer-link"
+        href="https://www.facebook.com/rajankcmusic"
+        target="_blank" rel="noopener noreferrer"
+        data-cursor="FACEBOOK">Facebook</a>
+      <a class="footer-link"
+        href="https://open.spotify.com/album/3QZpico4P4JC65GbbbiUm4"
+        target="_blank" rel="noopener noreferrer"
+        data-cursor="ALBUM">MA — Full Album</a>
+    </nav>
+
+    <div class="footer-right">
+      <p class="footer-copy">
+        © 2025 Rajan KC<br />
+        All rights reserved<br />
+        <br />
+        Kathmandu · Nepal<br />
+        NepHop
+      </p>
+    </div>
+
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
